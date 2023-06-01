@@ -46,7 +46,7 @@ try:
     if p is None:
         print(error_color + "Host has timed out! Sending magic packet to:", host + reset)
         wakeonlan.send_magic_packet(mac)
-        print(normal_color + "Magic packet sent." + reset)  # Debugging: Print a message to confirm the magic packet is sent
+        print(normal_color + "Magic packet sent." + reset)
     elif p is False:
         print(error_color + "Can't resolve:", host + reset)
         sys.exit()
